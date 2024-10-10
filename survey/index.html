@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="center">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+   <form id="survey-form">
+    <fieldset>
+        <label for="name">Name: <input placeholder="type your name..." id="name" type="text" name="name" required/></label>
+        <label for="email">Email: <input placeholder="type your email..." id="email" type="email" name="email" required/></label>
+        <label for="number">Age: <input placeholder="type your age..." id="number" type="number" min="13" max="100" name="Age" required/></label>
+        <label for="Gender">Gender: <input id="gender-female" type="radio" name="Gender" checked> female <input id="gender-male" type="radio" name="Gender">male</label>
+        <label>Which option fits you?
+          <select id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Student</option>
+            <option value="2">Employed</option>
+            <option value="3">Unemployed</option>
+          </select>
+        </label>
+        <label>
+          Where did you hear about us?
+          <select id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Friends</option>
+            <option value="2">Instagram</option>
+            <option value="3">Facebook</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label>
+          Would you recommend our product?
+          <input type="radio" name="yes-maybe-no" checked> yes <input name="yes-maybe-no"  type="radio"> maybe <input name="yes-maybe-no"  type="radio"> no
+        </label>
+        <label for="feedback"> <legend>Please leave us a feedback </legend>
+          <textarea id="feedback" name="feedback" rows="4" cols="30" placeholder="great product!!"></textarea>
+        </label>
+        
+      </fieldset>
+      <section>
+      <input id="submit" type="submit">
+      </section>
+      </div>
+    </form>
+</body>
+</html>
